@@ -14,7 +14,7 @@ Esse projeto é a simulação de um sistema simples de cadastro de usuário, ond
 <br />
 
 # 🛣 Fluxo
-<img src="./docs/fluxo.png" alt="My cool logo"/>
+<img src="./docs/fluxo_ms.png" alt="My cool logo"/>
 
 <br />
 <br />
