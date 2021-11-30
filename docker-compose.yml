@@ -46,16 +46,29 @@ services:
     networks:
       - app-net
 
-  api:
-    build: .
-    container_name: api
+  microservice_email:
+    build: ./microservices/email/
+    container_name: microservice_email
     ports:
-      - 3000:3000
-    volumes:
-      - .:/usr/app
+      - 3333:3333
     links:
       - database
     depends_on:
+      - kafka
+      - database
+    restart: always
+    networks:
+      - app-net
+
+  microservice_user:
+    build: ./microservices/user/
+    container_name: microservice_user
+    ports:
+      - 3000:3000
+    links:
+      - database
+    depends_on:
+      - kafka
       - database
     restart: always
     networks:

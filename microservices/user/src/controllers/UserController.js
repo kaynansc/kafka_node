@@ -17,7 +17,7 @@ class UserController {
       const user = { name, email, age };
 
       await usersRepository.create(user);
-      await producer("send-email", user);
+      await producer("user-created", user);
 
       response.json({ message: `User created! The code of confirmation will be sent to email: ${email}` });
     } catch (err) {
