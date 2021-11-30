@@ -5,7 +5,7 @@
 <br />
 
 # 💻 Sobre o Projeto
-Esse projeto é a simulação de um sistema de cadastro de usuário, onde foi criado dois simples microserviços, sendo a comunicação entre eles feita através do <b>Kafka</b>: 
+Esse projeto é a simulação de um sistema simples de cadastro de usuário, onde foi criado dois microserviços, sendo a comunicação entre eles feita através do <b>Kafka</b>: 
 
  1) Microserviço responsável por realizar a gravação de um usuário.
  2) Microserviço responsável por realizar a simulação de um envio de email com um código de confirmação para o emails que foram cadastrados. 
